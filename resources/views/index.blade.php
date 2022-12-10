@@ -1,5 +1,4 @@
 @extends('master')
-
 @section('content')
 <main>
     <div class="main-section">
@@ -23,7 +22,6 @@
                                 </div>
                                 <!--user-profile end-->
                                 <ul class="user-fw-status">
-
                                     <li>
                                         <?php $count = 0; ?>
                                         <h4>Following</h4>
@@ -105,7 +103,6 @@
                         </div>
                         <!--main-ws-sec end-->
                     </div>
-
                 </div>
             </div><!-- main-section-data end-->
         </div>

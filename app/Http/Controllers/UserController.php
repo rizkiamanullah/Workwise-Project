@@ -34,20 +34,21 @@ class UserController extends Controller
             'email' => 'required',
             'password' => 'required',
         ]);
+        
         $user = User::where('email', $request->email)->first();
+        $password = User::where('password', $request->password)->first();
         $like = Like::all();
         $profil = User::all();
-        
-
         $follow = Follow::all();
-        // dd($like);
         if ($user == NULL) {
-            return redirect('/');
+            return redirect('/')->withErrors(['msg' => 'Email tidak ditemukan!']);
+        } elseif ($password == NULL) {
+            return redirect('/')->withErrors(['msg' => 'Password salah!']);
         } else {
             $user = $user->getOriginal();
-            // dd($user);
             $user_id = Profil::where('user_id', $user['id'])->first();
-            if ($user_id == NULL) {
+            // dd($user_id);
+            if ($user_id == NULL) { // register
                 Profil::create([
                     'umur' => 0,
                     'bio' => '',
@@ -57,16 +58,12 @@ class UserController extends Controller
                 $posting = Postingan::all(); // ambil data postingan
                 $komen = Komen::all();
                 $profile = Profil::where('user_id', $user['id'])->first()->getOriginal();
-                // dd($like);
                 return view('postingan', compact('user', 'posting', 'komen', 'like', 'profil', 'follow', 'profile'));
-                // dd($posting);
             } else {
                 $posting = Postingan::all(); // ambil data postingan
                 $komen = Komen::all();
                 $profile = Profil::where('user_id', $user['id'])->first()->getOriginal();
-                // dd($like);
                 return view('postingan', compact('user', 'posting', 'komen', 'like', 'profil', 'follow', 'profile'));
-                // dd($posting);
             }
         }
     }
@@ -86,16 +83,18 @@ class UserController extends Controller
             'password_confirmation' => 'required_with:password|same:password',
             'foto' => 'required'
         ]);
-        $gambar = $request->foto;
-        $name_img = time() . ' - ' . $gambar->getClientOriginalName();
+        if ($request->foto != NULL){
+            $gambar = $request->foto;
+            $name_img = time() . ' - ' . $gambar->getClientOriginalName();
+            $gambar->move('img', $name_img);
+        }
         User::create([
             'nama' => $request->nama,
             'email' => $request->email,
             'password' => $request->password,
             'foto' => $name_img
         ]);
-        $gambar->move('img', $name_img);
-        return redirect('/');
+        return redirect('/')->with('status','Akun terdaftarkan! ');
     }
 
     /**
