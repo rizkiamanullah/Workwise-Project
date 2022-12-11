@@ -24,7 +24,7 @@
             <div class="container">
                 <div class="header-data">
                     <div class="logo">
-                        <a href="index.html" title=""><img src="images/logo.png" alt=""></a>
+                        <a href="#" title=""><img src="/images/wd-logo.png" width="60px" alt=""></a>
                     </div>
                     <div class="menu-btn">
                         <a href="#" title=""><i class="fa fa-bars"></i></a>

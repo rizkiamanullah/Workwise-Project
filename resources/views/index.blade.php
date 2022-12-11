@@ -90,14 +90,23 @@
                                 </div>
                                 <div class="post-st">
                                     <ul>
+                                        <li>
+                                            <p>Apa yang anda ingin bagikan?</p>
+                                        </li>
+                                        <?php $i = 0; ?>
+                                        @for ($i=0; $i<15; $i++)
+                                            <li>&nbsp;</li>
+                                        @endfor
                                         <li><a class="post-jb active" href="#" title="">Post</a></li>
                                     </ul>
                                 </div>
                                 <!--post-st end-->
                             </div>
                             <!--post-topbar end-->
-                            <div class="posts-section">
-                                @yield('postingan')
+                            <div style="overflow-y: auto; width: 103%; height: 900px">
+                                <div class="posts">
+                                    @yield('postingan')
+                                </div>
                             </div>
                             <!--posts-section end-->
                         </div>
@@ -108,6 +117,7 @@
         </div>
     </div>
 </main>
+
 <div class="post-popup job_post">
     <div class="post-project">
         <h3>Post</h3>
