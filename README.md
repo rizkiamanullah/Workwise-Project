@@ -1,3 +1,17 @@
+![image](https://user-images.githubusercontent.com/57005303/206895265-5c779b6d-df7b-4c54-84f1-83d5e0228ab4.png)
+
+Workwise is a social media-inspired website that connects job seekers with a community of like-minded individuals. With its user-friendly interface and engaging content, Workwise offers a platform for users to share and discuss their thoughts and experiences in the job world. Unlike LinkedIn, which is focused on professional networking and job searching, Workwise has a more casual and social feel, similar to popular sites like Facebook and Instagram. Users can create posts, comment on others' posts, and connect with each other to build a supportive community. Whether you're looking for advice, support, or just want to share your thoughts on the job market.
+
+![image](https://user-images.githubusercontent.com/57005303/206895247-9b684799-72bf-4f5c-ae06-9b568098fb71.png)
+
+![image](https://user-images.githubusercontent.com/57005303/206895243-bcf0205d-b0c7-42cc-8309-315c2b859dc5.png)
+
+![image](https://user-images.githubusercontent.com/57005303/206895170-9835e49b-555b-404d-ae3f-cfd1bd5aa305.png)
+
+![image](https://user-images.githubusercontent.com/57005303/206895173-d2537519-7aba-4b85-8678-130cf9490c5d.png)
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
