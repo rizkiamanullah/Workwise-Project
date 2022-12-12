@@ -1,6 +1,9 @@
+## Workwise
 ![image](https://user-images.githubusercontent.com/57005303/206895265-5c779b6d-df7b-4c54-84f1-83d5e0228ab4.png)
 
 Workwise is a social media-inspired website that connects job seekers with a community of like-minded individuals. With its user-friendly interface and engaging content, Workwise offers a platform for users to share and discuss their thoughts and experiences in the job world. Unlike LinkedIn, which is focused on professional networking and job searching, Workwise has a more casual and social feel, similar to popular sites like Facebook and Instagram. Users can create posts, comment on others' posts, and connect with each other to build a supportive community. Whether you're looking for advice, support, or just want to share your thoughts on the job market.
+
+## Overview
 
 ![image](https://user-images.githubusercontent.com/57005303/206895247-9b684799-72bf-4f5c-ae06-9b568098fb71.png)
 
